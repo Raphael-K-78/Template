@@ -1,0 +1,108 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    text-align: center;
+}
+
+
+/* navbar dropdown code*/
+nav{/* affiche la nav bar en haut de la page si elle n'est plus visible à ca pos normal*/
+    position: sticky;
+    top: 0px;
+}
+
+.ul_dropdown{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    flex-wrap: nowrap;
+    justify-content: center;
+    color: white;
+    font-family: Oswald;
+    font-size: 20px;
+    text-align: center;
+    background-color:rgb(30, 30, 30);/*couleur de la navigation */
+
+}
+
+
+.ul_dropdown ul{
+    margin-top: auto;
+    margin-bottom: auto;
+    box-sizing: content-box;
+}
+
+.ul_dropdown li p:hover{
+    background-color: rgb(50, 50, 50);
+}
+
+.ul_dropdown li p:hover,.ul_dropdown li ul li:hover{
+    opacity: 0.5;
+}
+
+.ul_dropdown a{
+    text-decoration: none;
+    color: black;
+}
+
+.ul_dropdown ul{
+    background-color:rgb(255, 255, 255);/* couleur des liens */
+    display: none;
+    position: absolute;
+    width: initial;
+    z-index: 1;
+    border-collapse: collapse;
+}
+
+.ul_dropdown ul li{
+    border: solid 2px black;/*border color des liens */
+    border-collapse:collapse;
+    opacity: 1;
+    transition: all .5s ease;
+}
+#li_dropdown_1:hover ul,#li_dropdown_2:hover ul,#li_dropdown_3:hover ul{
+    display: block;
+    animation-duration: 3s;
+  animation-name: slidein;
+
+ }
+
+.ul_dropdown ul,.ul_dropdown{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.ul_dropdown li p{
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.ul_dropdown ul{
+    text-align: center;
+}
+
+#li_dropdown_1, #li_dropdown_1 ul{/* width dropdown 1 */
+    width: 200px;
+}
+
+#li_dropdown_2, #li_dropdown_2 ul{/* width dropdown 2 */
+    width: 150px;
+}
+
+#li_dropdown_3, #li_dropdown_3 ul{/* width dropdown 3 */
+    width: 300px;
+}
+
+/*pour ajouter un dropdown copier coller le code ci dessous en ajoutant un au nombre présent à l'id  base 4-5-6 etc...  l'id 
+#li_dropdown_, #li_dropdown_ ul{
+    width: 300px;
+}
+*/
