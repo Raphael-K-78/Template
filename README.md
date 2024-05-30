@@ -1,4 +1,4 @@
-class lucifer2799(name,status){
+class Raphaël Kondratiuk(name,status){
   📚 STUDENT{
     "certificate" : "Professional BA",
     "speciality"  : "audiovisual, communication and internet",
@@ -8,10 +8,10 @@ class lucifer2799(name,status){
     "HTML-CSS",
     "PHP",
     "JS",
-    "Batch",
+    "SQL",
   ];
   📁 PORTFOLIO{
-  "CSV MANAGER": "link soon",
-  "SoundBoard" : "link soon",
+  "Portfolio": "[Portfolio](http://portfolio.raphael.kondratiuk.mmi-velizy.fr)",
+  "Location de voiture" : "[Sportcar](http://portfolio.raphael.kondratiuk.mmi-velizy.fr)",
   }
 }
