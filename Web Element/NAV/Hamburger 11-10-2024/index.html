@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        .humburger{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 4em;
+        height: 4em;
+        align-items: center;
+        }
+        .line{
+            transform-origin: center;
+            position: absolute;
+            height: 0.6em;
+            width: 4em;
+            /* margin-top: 0.5em; */
+            border-radius: 0.35em;
+            background-color: black;
+        }
+        .line:nth-child(1){
+            top:0.6em;
+        }
+        .line:nth-child(2){
+            bottom:0.6em;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="humburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+</body>
+</html>
