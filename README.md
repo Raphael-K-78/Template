@@ -5,7 +5,8 @@ class Raphaël Kondratiuk(name,status){
     "where"       : "UVSQ"
   };
   💻 DEVELOPPER[
-    "HTML-CSS",
+    "HTML",
+    "CSS",
     "PHP",
     "JS",
     "SQL",
