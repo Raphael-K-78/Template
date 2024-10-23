@@ -6,7 +6,7 @@
     <title>Document</title>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <style>
-        .humburger{
+        #humburger{
         position: relative;
         display: flex;
         flex-direction: column;
@@ -16,6 +16,8 @@
         align-items: center;
         }
         .line{
+            transition: transform cubic-bezier(0.19, 1, 0.22, 1);
+            transition-duration: 2s;
             transform-origin: center;
             position: absolute;
             height: 0.6em;
@@ -26,18 +28,39 @@
         }
         .line:nth-child(1){
             top:0.6em;
+            transform: rotate(0deg);
         }
         .line:nth-child(2){
             bottom:0.6em;
+            transform: rotate(0deg);
         }
-        
+        .line:nth-child(3){
+            transform: rotate(0deg);
+            bottom: auto;
+            top:auto;
+            
+        }
+        .close .line:nth-child(1), .close .line:nth-child(3){
+            top:auto;
+            transform: rotate(-45deg);
+        }
+        .close .line:nth-child(2){
+            bottom:auto;
+            transform: rotate(45deg);
+        }
     </style>
 </head>
 <body>
-    <div class="humburger">
+    <div id="humburger">
         <div class="line"></div>
         <div class="line"></div>
         <div class="line"></div>
     </div>
+    <script>
+        document.getElementById('humburger').addEventListener('click',function(e){
+            this.classList.toggle("close")
+        });
+            
+    </script>
 </body>
 </html>
