@@ -1,5 +1,5 @@
 .checkboard {
-    background-color: var(--green-color);
+    background-color: var(black);
     display: flex;
     color: white;
     justify-content: space-around;
